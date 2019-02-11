@@ -15,11 +15,11 @@ def assign_rooms(speakers)
   return guest
 end
 
-def printer(array)
-  batch_badge_creator(array).each |names|
+def printer(names)
+  batch_badge_creator(array).each {|names|}
     puts names
   end
-  assign_rooms(array).each |names|
+  assign_rooms(array).each {|names|}
     puts names
   end
 end
